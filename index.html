@@ -11,12 +11,14 @@
 
     <form id="create-task-form" action="" method="POST">
       <label for="new-task-description">Add New Reminder Below!</label><br>
-       <input type="text" id="new_task" name="new-task-description" placeholder="description">
-      <input type="submit" value="Create New Task">
+       <input required type="text" id="new_task" name="new-task-description" placeholder="     type here!"><br><br>
+       <label>Select a date!</label><br>
+       <input type = 'Date' required><br><br>
+      <input type="submit" value="Click to save Reminder!">
     </form>
 
     <div id="list">
-      <h2>My Reminders™</h2>
+      <h2 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">"It's seems impossible until it's done!"</h2>
       <ul id="tasks">
       </ul>
     </div>

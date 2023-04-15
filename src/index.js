@@ -4,10 +4,21 @@ document.addEventListener("DOMContentLoaded", () => {
   form.addEventListener('submit',(e)=>{
     e.preventDefault();
     AddToDo(e.target.new_task.value);
-    
+    dateControler();
+    form.reset();
   })
 
 });
+
+function dateControler(){
+  
+const datePTag = document.createElement('p')
+const dateControl = document.querySelector('input[type="date"]');
+const date = dateControl.value;
+datePTag.textContent = `${date}`
+document.querySelector('#tasks').appendChild(datePTag)
+
+}
 
 
 function AddToDo(newTask){
@@ -23,19 +34,25 @@ function AddToDo(newTask){
 
 }
 
+function chanageH1Style () {
 const h1 = document.querySelector('h1');
 h1.textContent = 'Reminders™'
 h1.style.color = 'beige'
+}
 
+chanageH1Style();
 
 function deleteToDo(c){
   c.target.parentNode.remove();
+  c.target
 }
 
+function changeInputStyle() { 
 let inputerr = document.querySelectorAll('input')
-console.log(inputerr)
-
 inputerr.forEach(input=>input.style.fontSize="20px")
+
+}
+changeInputStyle();
 
 
 
