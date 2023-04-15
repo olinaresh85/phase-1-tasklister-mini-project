@@ -23,8 +23,19 @@ function AddToDo(newTask){
 
 }
 
+const h1 = document.querySelector('h1');
+h1.textContent = 'Reminders™'
+h1.style.color = 'beige'
+
 
 function deleteToDo(c){
   c.target.parentNode.remove();
 }
+
+let inputerr = document.querySelectorAll('input')
+console.log(inputerr)
+
+inputerr.forEach(input=>input.style.fontSize="20px")
+
+
 

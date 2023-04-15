@@ -7,7 +7,7 @@ html {
 body {
   min-height: 100%;
   min-width: 100%;
-  background: linear-gradient(rgb(66, 200, 173), rgb(11, 25, 223));
+  background:radial-gradient(circle 100px at top, rgb(255, 165, 0), rgb(166, 78, 47));;
 }
 
 button {
@@ -15,29 +15,29 @@ button {
 }
 
 #main-content {
+ 
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction:column;
   border: 1px solid #333;
   background: rgba(0, 0, 0, 0.3);
-  padding: 15px 20px 18px 18px;
+  padding: 15px 20px 20px 15px;
   border-radius: 5px;
   box-shadow: 2px 5px 5px #333;
 }
 
 #list {
+  text-align: center;
   margin: 10px;
-  border: 1px solid #333;
-  background: rgba(22, 25, 65, 0.75);
-  padding: 15px 20px 18px 18px;
+  padding: 0px 20px 18px 20px;
   border-radius: 5px;
-  box-shadow: 2px 5px 5px #333;
-  color: rgb(129, 99, 61);
+  color: rgb(197, 174, 144);
 }
+
 
 #create-task-form {
   color:antiquewhite;
-  font-family: cursive;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
